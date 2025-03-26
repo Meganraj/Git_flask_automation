@@ -1,0 +1,14 @@
+name : Flask Deployment
+on : 
+  push:
+    branches: [main]
+
+jobs:
+  Deploy :
+    name : Deploy to ec2
+    runs-on : ubuntu-latest
+
+  steps:
+    - name : Deploy in EC2
+      env:
+        
